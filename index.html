@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Komilzoda | Главная</title>
+</head>
+<body>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container"><br>
+      <h1>Вход администратора</h1>
+      <p>Добро пожаловать. Введите свои учетные данные для доступа к вашей учетной записи</p>
+  
+      <label for="email"><b>Логин</b></label>
+      <input type="text" placeholder="hello@example.com" name="email" required>
+  
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="●●●●●●●●●●●●●●" name="psw" required>
+  
+      <button type="submit" class="btn">Войти</button>
+      <span class="close-button" onclick="closeForm()">&times;</span>
+    </form><br>
+  </div>
+
+    <nav class="navbar navbar-expand-md navbar-shrink py-3" id="mainNav">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src="/img/logo.png" alt="logo" width="150px">
+        </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Блог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Тренинги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <div class="dropdown">
+                    <a class="btn btn-link m-3 dropdown-toggle lang" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i> RU
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button"><img src="/img/flags/Flag_of_Tajikistan.png" width="24px" alt="tajikistan"> TJ</button></li>
+                      <li><button class="dropdown-item" type="button"><img src="/img/flags/Flag_of_Iran.png" alt="iran" width="24px"> IR</button></li>
+                      <li><button class="dropdown-item" type="button"><img src="/img/flags/united_kingdom.png" alt="kingdom" width="24px"> ENG</button></li>
+                    </ul>
+                  </div>
+                <a class="btn btn-danger"  onclick="openForm()" role="button">Вход</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="main-block">
+            <div class="text-block">
+                <p class="text">Я — Шахноз Комилзода, журналист, тренер и организатор мероприятий, вдохновляющая людей к действиям и преодолению границ. Моя миссия — не просто предоставлять информацию, а создавать настоящие опыты обучения и взаимодействия.</p>
+                <button class="more-button">Подробнее</button>
+                <a class="contact-link m-2" href="#">Связаться со мной <span class="arrow">➜</span></a>
+            </div>
+            <div class="image-block">
+                <img src="/img/main.png" alt="Изображение">
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container main_mobile">
+        <div class="text p-2">
+            <h4>Я — Шахноз Комилзода, журналист, тренер и организатор мероприятий, вдохновляющая людей к действиям и преодолению границ.<br><br>Моя миссия — не просто предоставлять информацию, а создавать настоящие опыты обучения и взаимодействия.</h4><br>
+            <button class="more-button-mobile m-1">Подробнее</button>
+            <a class="contact-link" href="#">Связаться со мной <span class="arrow">➜</span></a>
+        </div><br>
+        <div class="image text-center">
+            <img src="/img/main.png" width="300px" alt="Изображение блока">
+        </div>
+    </div>
+
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 text-center">Моя деятельность говорит<br> сама за себя:</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col text-center">
+            <div class="feature-icon d-inline-flex  text-center fs-2 mb-3">
+             <img src="/img/icons/education.svg" alt="icons">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Провела 100+ тренингов</h3>
+            <p>помогая сотням людей освоить новые<br> навыки и достичь личных целей.</p>
+          </div>
+          <div class="feature col text-center">
+            <div class="feature-icon d-inline-flex  text-center fs-2 mb-3">
+                <img src="/img/icons/microphone.svg" alt="icons">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Cоздала 1000+ репортажей</h3>
+            <p>передавая события и истории с  яркостью<br> и глубиной.</p>
+          </div>
+          <div class="feature col text-center">
+            <div class="feature-icon d-inline-flex  text-center fs-2 mb-3">
+                <img src="/img/icons/cube.svg" alt="icons">
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Участвовала в 50+ мероприятиях</h3>
+            <p>делясь знаниями и вдохновением с аудиторией.</p>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
