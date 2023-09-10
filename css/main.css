@@ -225,3 +225,12 @@ body {
     height: 376px;
     border-radius: 20px;
 }
+
+.social a {
+  font-size: 34px;
+  color:#090914;
+}
+
+.second_block {
+  background: #F1F5F9;
+}
