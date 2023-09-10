@@ -152,6 +152,10 @@ body {
     .contact-link {
         font-size: 16px;
     } 
+
+    .social {
+      display: flex;
+    }
 }
 
 .more-button {
@@ -163,6 +167,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     margin-top: 10px; /* Добавляем отступ снизу */
+}
+
+.blog_block .card {
+  border: none;
 }
 
 .contact-link {
@@ -233,4 +241,8 @@ body {
 
 .second_block {
   background: #F1F5F9;
+}
+
+.navbar-toggler {
+  border: none;
 }
